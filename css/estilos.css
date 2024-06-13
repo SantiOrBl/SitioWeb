@@ -1,0 +1,258 @@
+*{
+   margin: 0; /*margen como espacio externo*/
+   padding: 0; /*margen como espacio interno*/
+}
+   
+body{
+    text-align: center; /*Texto centrado*/
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+    background:rgba(0, 0, 0, 0.678); /*Color de fondo*/
+    color:orange; /*Oprimir sobre el color para hacer uno diferente*/
+    height: 4em; /*alto*/
+    position: fixed; /*que el elemento no se mueva de una posicion*/
+    width: 100%;
+
+}
+
+nav ul li{
+    display: inline-block; /*alinear horizontalmente*/
+    margin-right: 2em;
+    line-height: 4em; /*Alinear en un alto determinado*/
+}    
+nav ul li a{
+    color: rgb(128, 214, 248); /*Color fuente*/
+    font-size: 1.3em; /*Tamaño de la fuente en medida proporcional*/
+    text-decoration: none; /*Decoracion de texto=ninguna*/
+    
+}
+
+
+nav ul li a:hover{
+    color: white; /*over es cuando el puntero del mouse este sobre*/
+}
+
+header{
+    background-image: url(../img/asd.jpg); /*Imagen fondo*/
+    background-repeat: no-repeat; /*Que no se repita la imagen para cubrir todo*/
+    background-size: cover; /*Cubra todo el fondo*/
+    padding: 2em 0em;
+}
+
+header a{
+    color: rgb(255, 156, 7);
+    font-size: 20px;
+    text-shadow: 2px -2px 3px black;
+}
+.mi-foto{
+    border-radius: 50%; /*Redondear bordes"*/
+    border: 5px aqua solid; /*borde con ancho, color y estilo*/
+    width: 30%;
+    box-shadow: 0px 0px 15px 20px rgba(3, 3, 3, 0.644);
+}
+
+
+ /* #prueba{
+    border: 2px red solid;
+    width: 400px;
+    margin: 3em auto;
+    padding: 2em 4em;
+} */
+
+h1{
+    color: rgba(255, 255, 255, 0.863);
+    text-shadow: 2px -2px 3px rgba(0, 0, 0, 0.877); /*ejeX, ejeY y grosor*/
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+
+section{
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 10px 10px 20px 5px black; /*sombra de caja ejeX, ejeY, difuminado, tamaño color*/
+}
+
+section h2{
+    color: aqua;
+    border-bottom: 4px aqua dashed;
+    margin: 2em 0;
+    font-size: 1.8em; /*tamaño de la fuente*/
+    font-weight: bold; /*ancho de la fuente*/
+}
+#perfil p{
+    margin: 2em;
+}
+.destacado{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.5em;
+color: darkgray;
+}
+.p1{
+    color: rgb(255, 255, 255);
+    border: 3px rgb(0, 0, 0) solid;
+    margin: 6em 4em; 
+    padding: 0.5em;
+    text-decoration: none;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.877);
+    
+    font-weight: bold;
+    border-radius: 15%;
+    background-color: red;
+    border-color: black;
+}
+.p2{
+    color: rgb(255, 255, 255);
+    border: 3px rgb(0, 0, 0) solid;
+    margin: 6em 4em; 
+    padding: 0.5em;
+    text-decoration: none;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.877);
+    
+    font-weight: bold;
+    border-radius: 15%;
+    background-color: red;
+    border-color: black;
+}
+.p3{
+    color: rgb(255, 255, 255);
+    border: 3px rgba(0, 0, 0, 0.603) solid;
+    margin: 6em 4em; 
+    padding: 0.5em;
+    text-decoration: none;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.877);
+    
+    font-weight: bold;
+    border-radius: 15%;
+    background-color: blue;
+    border-color: black;
+}
+.p4{
+    color: rgb(255, 255, 255);
+    border: 3px rgba(0, 0, 0, 0.603) solid;
+    margin: 6em 4em; 
+    padding: 0.5em;
+    text-decoration: none;
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.877);
+    
+    font-weight: bold;
+    border-radius: 15%;
+    background-color: blue;
+    border-color: black;
+}
+
+.p1:hover{
+    color:black
+}
+.p2:hover{
+    color:black
+}
+.p3:hover{
+    color:black
+}
+.p4:hover{
+    color:black
+}
+.fila{
+    margin-bottom: 1em;
+}
+.col{
+    display: inline-block; /*Alinear horizontalmente*/
+    vertical-align: top; /*Para alinear el contenido desde arriba*/
+    text-align: left; /*Alinear texto a la izquierda*/
+}
+#estudios .col{
+ 
+    width: 45%;
+    
+}
+#habilidades .col{
+    width: 30%;
+}
+
+img{
+    max-width: 100%; /*Las imagenes se adecuan al maximo de su caja*/
+}
+
+.logos{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.texto{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#proyectos .col{
+    width: 45%;
+    margin-right: 2em;
+}
+
+.formulario{
+    display: block; /*Alinear de forma vertical*/
+    border: 3px aqua solid;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+#contactos .col{
+    width: 25%;
+}
+
+#contactos .mapa{
+    width: 40%;
+}
+
+#contactos h3{
+    margin-top: 1em;
+}
+
+#contactos .boton:hover{
+    background: rgb(140, 251, 255);
+}
+
+footer{
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 3em;
+}
+
+footer i{
+    font-size: 2em;
+    margin: 0.5em 0.3em;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color:darkgray;
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.flecha  {
+    box-shadow: 0px 0px 5px 10px black;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.flecha a{
+    color: black;
+}
+
